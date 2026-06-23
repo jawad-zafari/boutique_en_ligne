@@ -6,5 +6,8 @@ $user = 'root';
 $pass = '';
 $charset = 'utf8mb4';
 
+// Création du DSN (Data Source Name)
+$dsn = "mysql:host=$host;dbname=$db;charset=$charset";
+
 
 ?>
