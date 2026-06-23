@@ -13,5 +13,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt = $pdo->prepare($query);
     $stmt->execute([$name, $price, $description, $image_url]);
 
+    echo "Produit ajouté avec succès !";
 }
 ?>
