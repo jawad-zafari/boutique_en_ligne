@@ -6,6 +6,8 @@ require_once '../config/database.php';
 function getAllProducts($pdo) {
     // Préparer la requête SQL
     $query = "SELECT * FROM products";
-   
+    $stmt = $pdo->query($query);
+    
+    
 }
 ?>
