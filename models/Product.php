@@ -8,6 +8,7 @@ function getAllProducts($pdo) {
     $query = "SELECT * FROM products";
     $stmt = $pdo->query($query);
     
-    
+    // Retourner les résultats
+    return $stmt->fetchAll();
 }
 ?>
