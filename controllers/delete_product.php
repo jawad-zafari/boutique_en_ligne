@@ -12,5 +12,6 @@ if (isset($_GET['id'])) {
 
     // Rediriger vers la page principale après la suppression
     header("Location: ../views/products/index.php");
+    exit();
 }
 ?>
