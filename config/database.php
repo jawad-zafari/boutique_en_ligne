@@ -19,7 +19,7 @@ try {
     // Configuration pour récupérer les données sous forme de tableau associatif
     $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
     
-} catch () {
-    
+} catch (PDOException $e) {
+   
 }
 ?>
