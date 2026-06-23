@@ -4,6 +4,8 @@ require_once '../config/database.php';
 
 // Fonction simple pour récupérer tous les produits
 function getAllProducts($pdo) {
+    // Préparer la requête SQL
+    $query = "SELECT * FROM products";
    
 }
 ?>
