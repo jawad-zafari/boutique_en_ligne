@@ -10,6 +10,7 @@ if (isset($_GET['id'])) {
     $stmt = $pdo->prepare($query);
     $stmt->execute([$id]);
 
-   
+    // Rediriger vers la page principale après la suppression
+    header("Location: ../views/products/index.php");
 }
 ?>
