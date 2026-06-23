@@ -8,6 +8,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $description = $_POST['description'];
     $image_url = $_POST['image_url'];
 
-   
+    // Requête SQL pour insérer le produit
+    $query = "INSERT INTO products (name, price, description, image_url) VALUES (?, ?, ?, ?)";
+    $stmt = $pdo->prepare($query);
+    $stmt->execute([$name, $price, $description, $image_url]);
+
 }
 ?>
