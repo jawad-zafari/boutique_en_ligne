@@ -2,5 +2,8 @@
 // Inclure la configuration de la base de données
 require_once '../config/database.php';
 
-
+// Fonction simple pour récupérer tous les produits
+function getAllProducts($pdo) {
+   
+}
 ?>
